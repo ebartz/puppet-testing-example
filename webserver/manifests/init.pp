@@ -16,6 +16,7 @@ class webserver {
   file { '/var/www/html/phpmyadmin/config.inc.php':
     owner   => root,
     require => Package['phpmyadmin'],
+    mode    => 0444,
     source  => 'puppet:///modules/webserver/myadmin/config.inc.php',
   }
 
