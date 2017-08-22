@@ -1,4 +1,4 @@
-# spec/classes/package_spec.pp
+# spec/defines/config_spec.pp
 require 'spec_helper'
 
 describe 'webserver::init' do
